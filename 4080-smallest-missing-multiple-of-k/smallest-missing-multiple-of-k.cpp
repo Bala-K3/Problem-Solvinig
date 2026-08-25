@@ -7,12 +7,8 @@ public:
             mp[n] = true;
         }
 
-        int size = nums.size();
-        vector<int> res = nums;
-        sort(begin(res), end(res));
-        int maxi = res[size - 1];
 
-        for(int i = 1; i <= maxi + 1; i++) {
+        for(int i = 1; i <= 101; i++) {
             int c = i * k;
             mp[c];
         }
