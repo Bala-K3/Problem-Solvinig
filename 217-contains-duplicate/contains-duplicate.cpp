@@ -4,9 +4,7 @@ public:
         map<int, int> mp;
         for(int n : nums) {
             mp[n]++;
-        }
-        for(const auto &m : mp) {
-            if(m.second > 1) return true;
+            if(mp[n] > 1) return true;
         }
         return false;
     }
