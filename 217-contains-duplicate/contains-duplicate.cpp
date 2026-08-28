@@ -1,11 +1,15 @@
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
-        int count = 0;
         sort(begin(nums), end(nums));
-        for(int i = 1; i < nums.size(); i++) {
-            if(nums[i - 1] == nums[i]) count++;
+
+        int i = 0, j = 1;
+
+        while(i < nums.size() && j < nums.size()) {
+            if(nums[i] == nums[j]) return true;
+            i++, j++;
         }
-        return count;
+        // if(nums[i] == nums[j]) return true;
+        return false;
     }
 };
