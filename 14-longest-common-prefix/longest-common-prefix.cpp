@@ -12,8 +12,6 @@ public:
                 if(prefix.empty()) return "";
             }  
         }
-
-        if(prefix.empty()) return "";
         
         return prefix;
     }
